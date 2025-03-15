@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Gallery</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family:Arial,sans-serif;
+            text-align: center;
+            background-color: aliceblue;
+        }
+        .gallery-container{
+            display: inline-block;
+            flex-wrap: wrap;
+            justify-content: center;/*center the images horizontally*/
+            gap:20px;/*add space between the images*/
+            padding: 20px;
+        }
+        .gallery{
+            align-items: center;
+            justify-content: center;/*center the images horizontally*/
+            border: 1px solid hsl(0, 0%, 60%);
+            padding: 10px;
+            background-color: aliceblue;
+            width: 300px;
+        }
+        .gallery .description{
+          padding: 10px;
+          text-align: center;
+        }
+        .gallery:hover{
+            border: 1px solid hsl(0, 0%, 20%);
+        }
+        .gallery img{
+            width: 250px;
+            height: auto;
+        }
+    </style>
+    <div class="our-gallery">
+    <a target="_blank" href="images/IMG1.jpg">
+        <img src="images\IMG1.jpg" alt="nail 1" width="250">
+    </a>
+    <div class="description">nails 1</div>
+    </div>
+    <a target="_blank" href="images/IMG2.jpg">
+        <img src="images\IMG2.jpg" alt="nail 2" width="250">
+    </a>
+    <div class="description">nails 2</div>
+    <a target="_blank" href="images\IMG3.jpg">
+        <img src="images\IMG3.jpg" alt="nail 3" width="250">
+    </a>
+    <div class="description">nail 3</div>
+    <a target="_blank" href="images\IMG4.jpg">
+        <img src="images\IMG4.jpg" alt="nail 4" width="250">
+    </a>
+    <div class="description">nail 4</div>
+    <a target="_blank" href="images\img5.png">
+        <img src="images\img5.jpg" alt="nail 5" width="250">
+    </a>
+    <div class="description">nail 5</div>
+</div>
+</body>
+</html>
